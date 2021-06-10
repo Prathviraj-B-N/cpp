@@ -20,6 +20,6 @@ int main()
   for(int i=0;i<n;i++){
     cout<<dynamic_arr_in_heap[i]<<endl;
   }
-  
+  delete []dynamic_arr_in_heap;
   return 0;
 }
