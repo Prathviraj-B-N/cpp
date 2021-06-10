@@ -2,23 +2,23 @@
 
 Output:
 
-1
+1 (input)
 
-Size doubled from 1 to 2
+Size doubled from 1 to 2 (output)
 
-2
+2 (input)
 
 Size doubled from 2 to 4
 
-3
-4
+3 
+4 
 
 Size doubled from 4 to 8
 
-5
-6
-7
-8
+5 
+6 
+7 
+8 
 
 Size doubled from 8 to 16
 ^C
