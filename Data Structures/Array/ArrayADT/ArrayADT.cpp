@@ -1,8 +1,5 @@
-// ArrayADT.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
-
+// (.) operator works on objects , -> operator should be used for pointer to objects (x->y <=> (*x).y)
 typedef struct Array {
     int* arr_ptr;
     int size;
@@ -15,6 +12,32 @@ void display(Array a) {
         std::cout << a.arr_ptr[i]<<" ";
     }
     std::cout << std::endl;
+}
+
+void append(Array *a, int ele) {
+    if (a->length < a->size) {
+        a->arr_ptr[a->length] = ele;
+        a->length++;
+        std::cout <<"Elements inserted"<<std::endl;
+    }
+    else {
+        std::cout << "Array is full"<<std::endl;
+    }
+}
+
+void insert(Array* a, int ele,int index) {
+    
+    if (index+1 < a->size) {
+        for (int i = a->length-1; i <= index; i++) {
+            a->arr_ptr[i + 1] = a->arr_ptr[i];
+        }
+        a->arr_ptr[index] = ele;
+        a->length++;
+        std::cout << "Elements inserted" << std::endl;
+    }
+    else {
+        std::cout << "Array is full" << std::endl;
+    }
 }
 
 int main()
@@ -45,6 +68,9 @@ int main()
         }
     }
     
+    display(arr);
+    insert(&arr, 7,9);
+    append(&arr, 2);
     display(arr);
 
     return 0;
