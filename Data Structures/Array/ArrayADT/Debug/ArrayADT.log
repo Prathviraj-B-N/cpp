@@ -1,4 +1,0 @@
-﻿  ArrayADT.cpp
-C:\Projects\cpp\Data Structures\Array\ArrayADT\ArrayADT.cpp(10,2): warning C4091: 'typedef ': ignored on left of 'Array' when no variable is declared
-C:\Projects\cpp\Data Structures\Array\ArrayADT\ArrayADT.cpp(10,2): warning C4091: 'typedef ': ignored on left of 'Array' when no variable is declared
-  ArrayADT.vcxproj -> C:\Projects\cpp\Data Structures\Array\ArrayADT\Debug\ArrayADT.exe

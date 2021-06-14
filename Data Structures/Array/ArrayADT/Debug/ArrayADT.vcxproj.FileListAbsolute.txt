@@ -1,2 +1,0 @@
-C:\Projects\cpp\Data Structures\Array\ArrayADT\Debug\ArrayADT.exe
-C:\Projects\cpp\Data Structures\Array\ArrayADT\Debug\ArrayADT.pdb
