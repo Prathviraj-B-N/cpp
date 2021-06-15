@@ -5,9 +5,11 @@ using namespace std;
 int *initHashing()
 {
     int *h = new int[3];
+    h[1] = h[2] = h[3] = -1;
     cout << "Enter type of hashing:[Enter 1 or 2]" << endl;
-    cout << "1.direct adress table" << endl;
-    cout << "2.hash table" << endl;
+    cout << "1.Direct adress table" << endl;
+    cout << "2.Hash table" << endl;
+    cout << "3.Perfect Hashing" << endl;
 
     do
     {
@@ -18,9 +20,9 @@ int *initHashing()
         cin >> h[0];
     } while (h[0] < 1 && h[0] > 2);
 
-    /*if hashing != direct adress*/
-    if (h[0]!=1)
-    {
+    
+    if (h[0]==2){
+
         cout << "Enter type of HashFunction:[Enter 1-5]" << endl;
 
         cout << "1.diviion modulo method" << endl;
@@ -29,7 +31,6 @@ int *initHashing()
         cout << "4.fold boundary method" << endl;
         cout << "5.fold shifting" << endl;
 
-        h[1] = h[2] = h[3] = -1;
         //validate input
         do
         {
@@ -69,7 +70,15 @@ void main()
         No collision resolution technique required..
         */
     }
-    else{
-        /**/
+    else if(h[0] == 2){
+
+        //hash 
+        
     }
+    else if(h[0]==3){
+
+    //perfect hashing
+
+    }
+    
 }
