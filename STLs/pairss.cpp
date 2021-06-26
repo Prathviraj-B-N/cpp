@@ -14,8 +14,12 @@ using namespace std;
 
 void operate(){
     set<pair<int,int>> pairs = {{10,20},{32,65}}; 
-    int key = 19;
+    int key = 12;
     auto it = pairs.upper_bound({key,INT_MAX});
+    if(it == pairs.begin()){
+        cout<<"Not found!"<<endl;
+        return;
+    }
     it--;
     pair<int,int> p = *it;
     if(key>=p.first && key<=p.second){
@@ -23,6 +27,7 @@ void operate(){
     }
     else{
         cout<<"Not found!"<<endl;
+        return;
     }
     
 
