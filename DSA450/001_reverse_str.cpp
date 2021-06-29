@@ -7,7 +7,9 @@ string sol_w_extra_space(string str) {
     string s;
     int n = str.length();
     for (int i = n; i >= 0; i--) {
-        s.push_back(str[i]);
+        //s.push_back(str[i]);
+        s+=str[i];
+
     }
     return s;
 }
